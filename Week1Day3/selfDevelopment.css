@@ -1,0 +1,61 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    /* border: 1px solid black; */
+}
+
+body{
+    background-color: thistle;
+    color: darkmagenta; /* you can hover over that square of color to change the exact color */
+}
+
+h1{
+    text-align: center;
+    color: firebrick;
+    font-size: 40px;
+    background-color: cornflowerblue;
+}
+
+h2{
+    text-align: right;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 100; /* bold */
+    font-family: cursive;
+}
+
+h3{
+    font-family: fantasy;
+}
+
+span{
+    color: darkkhaki;
+}
+
+p{
+    color: indigo;
+    line-height: 25px;
+}
+
+#first-p{
+    font-style: italic;
+    color: fuchsia;
+}
+
+.unda{
+    text-decoration: underline;
+    color: green;
+}
+
+ul > li{
+    font-size: 28px;
+}
+
+div>h3{ /* > means only direct children */
+    font-style: italic;
+}
+
+div h3{ /* this includes grandchildren, etc. too */
+    font-style: italic;
+}
+
+/* Yellow = selectors, Blue = properties, Orange = values */
