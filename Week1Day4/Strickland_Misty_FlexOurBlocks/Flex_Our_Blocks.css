@@ -19,7 +19,7 @@
     width: 700px;
     background-color: red;
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 40px 25px 10px;
 }
 .sub-content {
     height: 200px;
@@ -31,7 +31,8 @@
     height: 120px;
     width: 660px;
     background-color: purple;
-    margin: 10px;
+    margin: 20px 10px 10px 10px;
+    padding: 5px;
 }
 .row {
     /* TODO - what should go here? */
