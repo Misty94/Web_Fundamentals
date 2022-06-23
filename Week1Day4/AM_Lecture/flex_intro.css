@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* The height and width of a box will also include the margin, padding, and border in the equation. This is the CSS Reset*/
+}
+
+/* h1{
+    margin: 10px;
+} */
+
+.row{
+    height: 250px;
+    outline: 1px solid black; /* This is better than border to see the outline cuz it doesn't interfere with actual sizing. */
+    background-color: coral;
+    display: flex;
+    justify-content: center; /* To horizontally space things apart */
+    align-items: center; /* To vertically space things apart */
+    /* gap: 10px; To add a gap of space in between */
+    margin-bottom: 20px;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    outline: 1px solid red;
+    /* display: inline-block; This has whitespace in between the boxes. */
+    /* margin-right: 180px; */
+    margin-bottom: 20px;
+}
+
+#box1{
+    /* margin-right: 300px; */
+    background-color: thistle;
+    margin-bottom: 0px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+#row1{
+    justify-content: space-evenly;
+}
+
+#row2{
+    justify-content: space-around;
+}
