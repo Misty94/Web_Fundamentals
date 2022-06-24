@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh; /* vh = view height = so 100 is full height of your monitor */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, grey, white /* 50% */); /* google how to make linear gradient vertical css*/
+}
+
+.main{
+    height: 700px;
+    width: 1200px; /* 1400px */
+    margin: 0 auto; /* left & right will automically center in its container */
+    outline: 1px solid blue;
+}
+
+#cover-photo{
+    width: 1200px;
+    height: 500px;
+    object-fit: cover; /* will make image nicer (not blurry) */
+}
+
+.profile-pic, #thumbnail{
+    height: 195px;
+    width: 195px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#thumbnail{
+    border: 4px solid white;
+}
+
+.profile-pic{
+    position: relative;
+    bottom: 50px; /* want to move up, use bottom, want to move right, use left */
+    left: 50px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.info{
+    margin-left: 60px;
+    /* position: absolute;
+    top: 300px;
+    left: 900px; */
+}
+
+#news-feed{
+    font-size: 16px;
+}
+
+.cookie-box{
+    height: 100px;
+    width: 1200px;
+    background-color: aqua;
+    border: 1px solid black;
+    position: fixed; /* fixed position to whereever you are */
+    bottom: 20px;
+}
