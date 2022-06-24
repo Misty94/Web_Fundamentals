@@ -1,0 +1,14 @@
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: thistle;
+    text-align: center;
+}
+
+.col, .col-2{
+    outline: 1px solid magenta;
+    width: 50px;
+}
+
+/* .col-2{
+} */
