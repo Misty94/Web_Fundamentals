@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    border: 3px solid lightgray;
+    height: 400px;
+    width: 900px;
+    margin: 75px auto;
+    font-family:'Coming Soon', 'Comic Sans MS', serif
+}
+
+#header{
+    background-color: #17A2B8;
+    height: 125px;
+}
+
+.user-icon, #user{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* object-fit: cover; not needed */
+}
+
+#user{
+    outline: 3px solid lightgray;
+    border: 3px solid white;
+}
+
+.user-icon{
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+}
+
+.name-local{
+    /* outline: 1px solid darkmagenta; */
+    /* margin: 0px 0px 5px 15px; */
+    /* padding: 0px 0px 30px 10px; */
+    margin: 0px 0px 25px 25px;
+    /* margin-bottom: 50px; */
+    position: relative;
+    bottom: 40px;
+}
+
+.info{
+    margin: 0px 0px 100px 25px;
+    /* outline: 1px solid red; */
+    /* margin-bottom: 100px; */
+    position: relative;
+    bottom: 50px;
+}
+
+h2{
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+
+#map{
+    height: 25px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+h3{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer{
+    /* outline: 1px solid yellow; */
+    position: relative;
+    bottom: 130px;
+    left: 28px;
+}
+
+#gear{
+    height: 20px;
+}
+
+a{
+    margin-left: 8px;
+}
+
+
