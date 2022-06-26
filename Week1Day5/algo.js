@@ -70,3 +70,11 @@ function searchForArtist(artistName){
 
 console.log(searchForArtist("MJ"));
 console.log(searchForArtist("Ariana Grande"));
+
+
+
+
+
+console.log( 8 % 3); // it logs 2
+
+console.log(8 % 3 == 2); // it logs true
