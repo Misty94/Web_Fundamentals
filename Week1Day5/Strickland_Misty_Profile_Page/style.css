@@ -191,7 +191,7 @@ h3{
     padding-top: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* so the check and x are even for both */
+    justify-content: space-evenly; /* so the check and x are even for both */
 }
 
 .thumbnail, .friends{
