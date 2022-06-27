@@ -11,7 +11,7 @@
     <div id="nav-bar">
         <h1>Dojonary</h1>
         <input type="text" placeholder="Search">
-        <button>Login</button>
+        <button onclick="logout(this)">Login</button>
     </div>
 
     <div id="main">
@@ -21,7 +21,7 @@
                     <h2>ninja</h2>
                     <p><em>noun</em></p>
                     <p>Plural: <em>ninjas</em></p>
-                    <button>13 likes</button>
+                    <button onclick="alert('Ninja was liked')">13 likes</button>
                 </div>
                 <div class="box-2">
                     <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
@@ -33,7 +33,7 @@
                     <h2>ninja</h2>
                     <p><em>noun</em></p>
                     <p>Plural: <em>ninjas</em></p>
-                    <button>37 likes</button>
+                    <button onclick="alert('Ninja was liked')">37 likes</button>
                 </div>
                 <div class="box-2">
                     <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
@@ -44,9 +44,10 @@
         <div class="col-right">
             <div id="def-box">
                 <p>Dojonary is defined by <strong>YOU</strong></p>
-                <button>Add Definition</button>
+                <button onclick="removeButton(this)">Add Definition</button>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
