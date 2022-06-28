@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+#like-box{
+    border: 3px solid black;
+    margin: 50px 200px;
+    width: 500px;
+}
+
+#row-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+button{
+    background-color: #FFD966;
+    padding: 5px 15px;
+    margin:  15px 25px 15px 0px;
+    box-shadow: 4px 4px black;
+    border: 3px solid black;
+    font-size: 1.2rem;
+}
+
+#likes{
+    /* outline: 3px dashed cadetblue; */
+    margin-left: 75px;
+    font-size: 1.1rem;
+}
+
+#row-1 > p:first-of-type{
+    margin-left: 25px;
+    font-size: 1.4rem;
+}
+
+#bottom{
+    /* outline: 2px solid chartreuse; */
+    margin: 18px 15px;
+    font-size: 1.2rem;
+}
