@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px 40px;
+}
+
+#header{
+    /* height: 100px; */
+    /* outline: 3px solid hotpink; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    height: 100px;
+}
+
+#user{
+    height: 60px;
+}
+
+#header-left, #header-right{
+    /* outline: 2px dotted darkcyan; */
+    display: flex;
+    align-items: center;
+}
+
+/* 1rem = 16px 2rem = 32px (a h1 is already 2rem) */
+
+h1{
+    font-size: 3.4rem;
+    font-family: cursive;
+}
+
+#header-right > span{
+    font-size: 1.8rem;
+}
+
+/* End of Header */
+
+#nav-bar{
+    /* outline: 3px solid darkorchid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.3rem;
+    padding: 10px 0px;
+    border-bottom: 3px solid black;
+    text-decoration: underline;
+}
+
+/* rem is relative to the base font size, px is a static unit and will always be that same size no matter what
+*/
+
+#nav-bar input{
+    height: 38px;
+    width: 210px;
+    border-radius: 10px;
+}
+
+#search-logo{
+    height: 20px;
+    position: relative;
+    right: 105px;
+    top: 3px;
+}
+
+/* End of nav-bar */
+
+#slogan{
+    text-align: center;
+    font-style: italic;
+    font-size: 2.4rem;
+    padding: 15px 0px;
+    /* border: 1px dotted red; */
+}
+
+/* End of Slogan */
+
+#players{
+    background-color: coral;
+    border-radius: 20px;
+    display: flex;
+    /* height: 200px; */
+    justify-content: space-around;
+    align-items:center;
+    padding: 20px 0px;
+}
+
+.player > img{
+    height: 100px;
+}
+
+.player{
+    text-align: center;
+}
+
+/* End of Players */
+
+#main{
+    /* border: 2px dotted rebeccapurple; */
+    /* height: 700px; */
+    display: flex;
+    gap: 20px;
+    margin-top: 20px; /* to push away the columns*/
+}
+
+#col-left, #col-right{
+    /* border: 1px solid black; */
+    /* height: 200px; */
+}
+
+#col-left{
+    flex: 1;
+    /* margin-right: 20px; Same as gap */
+}
+
+#col-right{
+    flex: 1.8;
+}
+
+#try > img{
+    height: 40px;
+    width: 70px;
+}
+
+#try{
+    /* outline: 3px solid darkred; */
+    background-color: coral;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#col-left > img{
+    height: 200px;
+    margin-top: 20px;
+}
+
+/* #reggie{
+    width: 250px;
+} */
+
+/* End of col-left */
+
+#col-right{
+    display: flex;
+}
+
+#learn{
+    /* outline: 2px solid powderblue; */
+    background-color: coral;
+    height: 300px;
+    padding: 80px 10px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#col-right > img{
+    height: 300px;
+    width: 200px;
+}
+
+#learn > button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: burlywood;
+    margin-top: 20px;
+    box-shadow: 3px 3px black;
+}
+
+/* end of main */
+
+#terms{
+    background-color: gray;
+    border: 1px solid black;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#terms > h4{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* End of terms */
+
+#cookie-box{
+    border: 2px solid black;
+    /* height: 100px; */
+    background-color: tan;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: fixed;
+    bottom: 20px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: 900px;
+}
+
+#cookie-box > img{
+    height: 80px;
+}
+
+#cookie-box > button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 3px 3px black;
+    font-size: 1.2rem;
+}
+
+/* Christian helping with other approaches for text */
