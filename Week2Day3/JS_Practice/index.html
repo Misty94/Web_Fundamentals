@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+</head>
+<body>
+    <button onclick="alert('You clicked me!')">Click Me!</button>
+    
+    <button onclick="print(this)">Another Button</button>
+
+    <p>
+        <button onclick="turnOff(this)">On</button>
+        <button onclick="turnOn(this)">Off</button>
+        <!-- <button>On</button> -->
+    </p>
+
+    <h1 onclick="removeH1(this)">Hello Everybody!</h1>
+
+    <input onmouseover="hover(this)" onmouseout="noHover(this)" type="text">
+
+    <input onmouseover="changeColor(this)" type="text">
+
+    <input onmouseover="changeColor(this)" onmouseout="changeBack(this)" type="text">
+    
+    <script src="script.js"></script>
+</body>
+</html>
