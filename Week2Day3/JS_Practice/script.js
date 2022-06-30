@@ -33,3 +33,19 @@ function changeColor(element){
 function changeBack(element){
     element.style.backgroundColor = "snow";
 }
+
+function setName(element){
+    var nameSpan = document.querySelector("#name");
+    console.log(element.value);
+    nameSpan.innerText = element.value;
+}
+
+function pickFood(element){
+    console.log("the food is " + element.value);
+    var foodToOrder = element.value;
+}
+
+function order(element){
+    var foodToOrder = element.value;
+    alert("Ordering " + foodToOrder);
+}

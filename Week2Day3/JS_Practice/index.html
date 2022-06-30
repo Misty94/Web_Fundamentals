@@ -24,6 +24,17 @@
     <input onmouseover="changeColor(this)" type="text">
 
     <input onmouseover="changeColor(this)" onmouseout="changeBack(this)" type="text">
+
+    <p>Hello, my name is <span id="name"></span></p>
+    <input type="text" name="name" placeholder="Your name here" oninput="setName(this)">
+
+    <select name="food" onchange="pickFood(this)">
+        <option>Pizza</option>
+        <option>Chicken Tenders</option>
+        <option>Steak</option>
+        <option>French Fries</option>
+    </select>
+    <button onclick="order(this)">Order Food</button>
     
     <script src="script.js"></script>
 </body>
