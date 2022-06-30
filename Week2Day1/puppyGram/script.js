@@ -49,3 +49,11 @@ function incrementLike(id){ //the function will be called when the button is cli
 //     content: "like(s)";
 //      background-color: blue;
 // }
+
+
+function alertMessageFromInput(){
+    console.log("connected");
+    // alert("hello"); <- that makes a pop up appear when clicked that says hello
+    var searchInput = document.querySelector("#search");
+    alert("You searched for " + searchInput.value);
+}
