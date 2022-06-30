@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="nav-bar">
+        <ul id="nav-left">
+            <li><h1 id="nav-h1">Profile</h1></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+        </ul>
+        <input id="submit" type="submit" value="Sign Out"> <!--I tried it this way because I wanted it to be able to click, but it still doesn't.-->
+    </div>
+
+    <div id="main"> <!--This is the whole body of the web page.-->
+        
+        <div class="col-left">
+
+            <div class="user-card">
+                <div class="card-header">
+                    <img id="jane" src="./jane-m.jpg" alt="Jane">
+                </div>
+                <div class="card-info">
+                    <h1 id="card-h1">Jane Doe</h1>
+                    <!--I orginally had the image inside a <p> tag along with the word "Seattle" but I couldn't style the word "Seattle" when I did that.-->
+                    <img class="icons" src="./map-marker.png" alt="map marker logo">
+                    <span>Seattle</span>
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p class="last-p">Master of shadows and the Internet!</p>
+                    <img class="icons" src="./gear.png" alt="gear logo">
+                    <a onclick="changeName(this)" href="#">edit profile</a>
+                </div>
+            </div>
+
+            <div class="education">
+                <div class="edu-header">
+                    <p>Education</p>
+                </div>
+                <div class="edu-body">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p>Dec 2019 - Mar 2020</p>
+                    <p class="last-p">Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+
+        </div> <!--End of col-left -->
+
+        <div class="col-right">
+
+            <div class="headers">
+                <span class="num" id="reqNum">2</span>
+                <span>Connection Requests</span>
+            </div>
+            <div class="req-body">
+                <div class="req-people" id="req-people-1">
+                    <img class="thumbnail" src="./todd-s.jpg" alt="Todd E">
+                    <span id="name1" >Todd E</span>
+                    <img onclick="accept('#req-people-1')" class="yes" src="./accept-circle.png" alt="accept request icon">
+                    <img onclick="decline('#req-people-1')" class="no" src="./close-circle.png" alt="decline request icon">
+                </div>
+                <div class="req-people" id="req-people-2">
+                    <img class="thumbnail" src="./phil-s.jpg" alt="Phil K">
+                    <span>Phil K</span>
+                    <img onclick="accept('#req-people-2')" class="yes" src="./accept-circle.png" alt="accept requet icon">
+                    <img onclick="decline('#req-people-2')" class="no" src="./close-circle.png" alt="decline request icon">
+                </div>
+            </div>
+
+            <div class="connections">
+                <div class="headers">
+                    <span class="num" id="c-num">418</span>
+                    <span>Your Connections</span>
+                </div>
+                <div class="connect-border">
+                    <div class="connect-body"> <!--I had to put each image and name in divs because the only way I could get the names to be centered next to the pic was to use align-items which is a flex property.-->
+                        <img class="friends" src="./adrien-s.jpg" alt="Adrien D">
+                        <span>Adrien D</span>
+                    </div>
+                    <div class="connect-body">
+                        <img class="friends" src="./anne-s.jpg" alt="Anne J">
+                        <span>Anne J</span>
+                    </div>
+                    <div class="connect-body">
+                        <img class="friends" src="./alayne-s.jpg" alt="Alayne T">
+                        <span>Alayne T</span>
+                    </div>
+                    <div class="connect-body">
+                        <img class="friends" src="./arry-s.jpg" alt="Arry Y">
+                        <span>Arry Y</span>
+                    </div>
+                </div>
+                <div class="view-more">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+/* This works with a width of 1275 on inspect in Chrome. */
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#nav-bar{ /* This encompasses the whole header and navigation bar */
+    background-color: black;
+    /* height: 100px; */
+    display: flex; /* This has to be flex so the button can be beside the nav-left  */
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px; /* To push off from the left side of the screen */
+    font-family: sans-serif;
+    margin-bottom: 50px; /* To add space from the columns */
+}
+
+#nav-left{
+    /* outline: 5px solid navy; */
+    color: white;
+    display: flex; /* It has to be flex so the links will be side-by-side. */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 18px 100px;
+    list-style-type: none;
+}
+
+#submit{
+    background-color: #17A2B8;
+    color: white;
+    padding: 5px 15px;
+    margin-right: 200px; /* This pushes the button away from the end of the webpage. */
+    font-size: 1.1rem;
+}
+
+#nav-left a{
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav-h1{
+    font-size: 35px;
+    padding-right: 20px; /* This is to move "Profile" away from "Home" */
+}
+
+/* This is the end of the nav-bar/header and the beginning of the main page. */
+
+#main{
+    height: 750px;
+    display: flex; /* This is the col-left & col-right's parent so it needs to be flex so the columns can be side-by-side*/
+    font-family: sans-serif;
+}
+
+/* .col-left, .col-right{
+    margin: 0px auto;
+    outline: 5px solid purple;
+} */
+
+.col-left{
+    flex: 1.8;
+    margin-left: 200px;
+}
+
+.col-right{
+    flex: 1;
+    margin: 0px 200px 0px 40px;
+}
+
+/* .user-card{
+    outline: 5px solid crimson;
+} */
+
+.card-header{
+    background-color: #17A2B8;
+}
+
+#jane{
+    border-radius: 50%;
+    height: 125px;
+    position: relative;
+    top: 50px;
+    left: 27px;
+    border: 3px solid white;
+    outline: 3px solid lightgray;
+}
+
+.card-info{
+    /* margin-left: 30px; <- This can't be here because it makes the border start where the text starts. */
+    font-size: 1.2rem;
+    border: 4px solid lightgray;
+    border-top: none;
+    padding-bottom: 15px; /* This gives padding under the "edit profile" link */
+}
+
+#card-h1{
+    padding-top: 50px; /* To push the "Jane Doe" down from Jane's pic*/
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.icons{
+    height: 25px;
+    margin-left: 30px;
+}
+
+.card-info > span{ /* Seattle */
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.card-info p:first-of-type{ /* This means the first <p> in the div .card-info */
+    padding-top: 15px;
+    margin-left: 30px;
+}
+
+.last-p{ /* This applies to the last sentence in the user-card AND in the edu-body. */
+    padding-bottom: 15px;
+    margin-left: 30px;
+}
+
+.card-info a{ /* Just to scoot the "edit profile" over a little */
+    padding-left: 5px; 
+}
+
+/* Finished with the user-card (first box) inside col-left */
+
+.education{
+    margin-top: 50px;
+}
+
+.edu-header{
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-indent: 15px; 
+}
+
+.edu-body{
+    border: 4px solid lightgray;
+    border-top: none;
+    font-size: 1.2rem;
+}
+
+h3{
+    margin-left: 30px;
+    padding-top: 15px;
+}
+
+.edu-body p:first-of-type{
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    color: gray;
+}
+
+/* End of col-left */
+
+.headers{
+    background-color: #333333;
+    color: white;
+    padding: 25px;
+    font-size: 1.2rem;
+}
+
+.num{
+    border-radius: 50%;
+    background-color: #CCCCCC;
+    color: black;
+    padding: 10px;
+    margin-right: 5px;
+    /* height: 50px;
+    width: 50px; */
+}
+
+.headers > span{
+    font-weight: bold;
+}
+
+.req-body, .connect-border, .view-more{
+    border: 4px solid lightgray;
+    border-top: none;
+    padding-bottom: 10px; /* To add a little space under Phil's & Arry's pic */
+}
+
+.req-people{
+    /* outline: 5px solid salmon; */
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* so the check and x are even for both */
+}
+
+.thumbnail, .friends{
+    border-radius: 50%;
+    height: 75px;
+    margin-left: 15px;
+}
+
+.yes{
+    height: 40px;
+    margin-left: 15px;
+    /* margin-right: 5px; */
+}
+
+.no{
+    height: 40px;
+    margin-right: 15px;
+}
+
+.req-people > span, .connect-body > span, .view-more a{
+    font-size: 1.3rem;
+    padding-left: 15px;
+}
+
+/* Finished with first box inside col-right */
+
+.connections{
+    margin-top: 40px;
+}
+
+.friends{
+    margin-top: 10px;
+}
+
+.connect-body > span{
+    margin-right: 90px;
+}
+
+.connect-body{
+    display: flex;
+    align-items: center;
+}
+
+.view-more{
+    padding-top: 5px;
+}
