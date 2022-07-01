@@ -1,0 +1,156 @@
+/* This works with a width of 1305 on inspect in Chrome */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+#header{
+    background-color: #9FC5F8;
+    color: white;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-left{
+    padding: 10px 50px 10px 200px; /* we can lower the side padding if need be */
+    font-size: 1.3rem;
+    /* outline: 2px solid hotpink; */
+}
+
+#header-right > ul{
+    display: flex;
+    /* outline: 2px solid darkmagenta; */
+    padding: 10px 215px 10px 50px;
+}
+
+#header-right li{
+    list-style-type: none;
+    /* outline: 2px solid goldenrod; */
+    padding-left: 50px;
+    font-size: 1.5rem;
+}
+
+#header-right a{
+    text-decoration: none;
+    color: white;
+}
+
+/* End of header */
+
+#main{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 2px solid black;
+}
+
+#city > h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+#temp{
+    font-size: 1.1rem;
+    display: flex;
+}
+
+select{
+    min-width: 45px;
+    min-height: 25px;
+    border: 2px solid black;
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+/* End of top part */
+
+#weather{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.days{
+    /* outline: 2px solid rosybrown; */
+    background-color: #EEEEEE;
+    height: 300px;
+    width: 200px;
+}
+
+.days p:first-of-type{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.days > img{
+    height: 120px;
+    border-radius: 50%;
+    padding: 5px 45px;
+}
+
+.p2{
+    text-align: center;
+    font-size: 1.1rem;
+    padding-bottom: 15px;
+}
+
+.lastp{
+    color: red;
+    font-size: 1.3rem;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.days span{
+    color: blue;
+    padding-left: 40px;
+}
+
+/* End of weather */
+
+#cookie-box{
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 880px;
+}
+
+#cookie-box > img{
+    padding-right: 15px;
+}
+
+#cookie-box span{
+    /* outline: 1px solid blueviolet; */
+    padding-right: 510px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+#cookie-box > button{
+    box-shadow: 4px 4px black;
+    border: 2px solid black;
+    background-color: #9FC5F8;
+    height: 30px;
+    width: 220px;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+}
