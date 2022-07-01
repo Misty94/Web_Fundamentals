@@ -28,9 +28,9 @@ function howMany(i, j, element) {
   console.log({i, j});
   var sum = 0;
 
-  // if(theDojo[i][j]!0) { not equal
-  //   dojoDiv.innerHTML = `<button onclick="location.reload()">restart</button>`;
-  // };
+  if(theDojo[i][j] != 0) { //not equal
+    dojoDiv.innerHTML = `<button onclick="location.reload()">restart</button>`
+  };
 
   // find neighbors
   // verify if neighbors are within bounds
@@ -47,12 +47,12 @@ function howMany(i, j, element) {
     }
   }
   // "TODO - determine how many ninjas are hiding in adjacent squares"
-  alert(sum);
+  // alert(sum);
   element.innerText = sum;
 }
 
 function verify(x,y){
-  return x > 0 && x < 9 && y > 0 && y < 9;
+  return x >= 0 && x <= 9 && y >= 0 && y <= 9;
 }
     
 // BONUS CHALLENGES
