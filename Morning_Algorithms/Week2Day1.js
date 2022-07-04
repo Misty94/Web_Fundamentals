@@ -9,23 +9,19 @@ console.log(ceiling); // 4
 console.log(random); // 0.11219112643176077 <- just a random number, changes each time
 
 
-// Dice Roller          ????
+// Dice Roller    <- It Works!!
 function d6() {
-    var roll = Math.random();
-    
     var sides = 6;
-
-    // roll = Math.floor() ?
-
+    var roll = 1 + Math.floor(Math.random() * sides);
 
     return roll;
 }
     
 var playerRoll = d6();
-console.log("The player rolled: " + playerRoll);
+console.log("The player rolled a: " + playerRoll);
 
 
-// Consult the Oracle
+// Consult the Oracle <- It Works!!!
 
 var lifesAnswers = [
     "It is certain.",
@@ -51,9 +47,9 @@ var lifesAnswers = [
 ];
 
 function randomAnswer(){
-    var answer = lifesAnswers[Math.floor(Math.random())];
+    var answer = lifesAnswers[Math.floor(Math.random() * lifesAnswers.length)];
     return answer;
 }
 
 var questionAnswered = randomAnswer();
-console.log("Your answer is " + questionAnswered);
+console.log("Your answer is: " + questionAnswered);
